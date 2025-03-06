@@ -1,0 +1,65 @@
+body {
+    background-color: #8ec1e8;
+    color: white;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #3B82F6;
+}
+
+.word-container {
+    background-color: #3B82F6;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.current-word {
+    font-size: 1.5em;
+    display: inline;
+}
+
+.next-words {
+    color: #BFDBFE;
+    font-size: 1.5em;
+    display: inline;
+    margin-left: 10px;
+}
+
+.status-text {
+    font-size: 1.5em;
+}
+
+.warning {
+    color: red;
+}
+
+.correct-letter {
+    color: #00e800;
+}
+
+.incorrect-letter {
+    color: red;
+}
+
+.default-letter {
+    color: black;
+}
+
+button {
+    background-color: #93C5FD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #60A5FA;
+}
