@@ -63,3 +63,10 @@ button {
 button:hover {
     background-color: #60A5FA;
 }
+
+.highlight {
+    background-color: #BFDBFE;
+    padding: 2px 2px;
+    border-radius: 3px;
+    color: #ffffff;
+}
