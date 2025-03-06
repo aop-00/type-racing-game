@@ -59,23 +59,22 @@ const TypeRacingGame = () => {
     };
 
     const handleKeyPress = (e) => {
-    if (!isGameOver && e.key !== 'Backspace') {
-        if (input.length < currentWord.length || input[input.length - 1] === currentWord[input.length - 1]) {
-            setInput((prevInput) => prevInput + e.key);
-            if (!startTime) {
-                setStartTime(new Date());
-            }
-            if (e.key === ' ') {
-                evaluateWord();
+        if (!isGameOver && e.key !== 'Backspace') {
+            if (input.length < currentWord.length || input[input.length - 1] === currentWord[input.length - 1]) {
+                setInput((prevInput) => prevInput + e.key);
+                if (!startTime) {
+                    setStartTime(new Date());
+                }
+                if (e.key === ' ') {
+                    evaluateWord();
+                }
             }
         }
-    }
-};
+    };
 
-    
     const handleKeyDown = (e) => {
-    if (!isGameOver && e.key === 'Backspace') {
-        setInput((prevInput) => prevInput.slice(0, -1));
+        if (!isGameOver && e.key === 'Backspace') {
+            setInput((prevInput) => prevInput.slice(0, -1));
         }
     };
 
@@ -141,7 +140,7 @@ const TypeRacingGame = () => {
             {!isGameOver ? (
                 <div>
                     <div className="word-container">
-                        <span className="current-word">
+                        <span className="current-word highlight">
                             {currentWord.split('').map((letter, index) => (
                                 <span key={index} className={getLetterClass(letter, index)}>
                                     {letter}
